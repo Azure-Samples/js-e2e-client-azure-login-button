@@ -24,8 +24,8 @@ function App() {
   const ShowPermissionRevokeLinks = () => {
     return (
       <div>
-        <a href="https://myapps.microsoft.com" target="_blank" rel='noopener'>Revoke AAD permission</a>&nbsp;|&nbsp;
-        <a href="https://account.live.com/consent/manage" target="_blank" rel='noopener'>
+        <a href="https://myapps.microsoft.com" target="_blank" rel="noopener">Revoke AAD permission</a>&nbsp;|&nbsp;
+        <a href="https://account.live.com/consent/manage" target="_blank" rel="noopener">
           Revoke Consumer permission
         </a>
       </div>
