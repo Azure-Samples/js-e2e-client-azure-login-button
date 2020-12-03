@@ -1,57 +1,15 @@
-# Project Name
+# TypeScript end-to-end add login button to client application 
 
-(short, 1-3 sentenced, description of the project)
+For a complete tutorial, please use the [Microsoft Documentation tutorial found here](https://aka.ms/js-login-button).
 
-## Features
+## Create-react-app
 
-This project framework provides the following features:
+The SPA built in this tutorial is a React app (create-react-app) with the following tasks:
 
-* Feature 1
-* Feature 2
-* ...
+- Login using a Microsoft-supported login such as Office 365 or Outlook.com
+- Log off the application
 
-## Getting Started
+To provide a quick and simple single page application, the sample uses **create-react-app** with TypeScript. This front-end framework provides several shortcuts in typical client development with Azure SDKs:
 
-### Prerequisites
-
-(ideally very short, if any)
-
-- OS
-- Library version
-- ...
-
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
-
-
-## Demo
-
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
-
-## Resources
-
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+- Bundling, required for Azure SDKs used in a client-application
+- Environment variables in the `.env` file
