@@ -1,3 +1,17 @@
+---
+page_type: sample
+languages:
+- javascript
+- typescript
+- nodejs
+name: "TypeScript end-to-end add login button to client application"
+description: "Build React app with Microsoft login button."
+products:
+- azure
+- azure-portal
+- vs-code
+---
+
 # TypeScript end-to-end add login button to client application 
 
 For a complete tutorial, please use the [Microsoft Documentation tutorial found here](https://aka.ms/js-login-button).
