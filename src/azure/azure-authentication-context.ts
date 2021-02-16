@@ -63,7 +63,7 @@ export class AzureAuthenticationContext {
     this.myMSALObj.logout(logOutRequest);
   }
   handleResponse(response: AuthenticationResult, incomingFunction: any) {
-    if (response !== null) {
+    if(response !==null && response.account !==null) {
       this.account = response.account;
     } else {
       this.account = this.getAccount();
