@@ -2,6 +2,7 @@
   "name": "js-e2e-client-azure-login-button",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:7071",
   "dependencies": {
     "@azure/msal-browser": "^2.7.0",
     "mongodb": "^3.6.7",
