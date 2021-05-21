@@ -8,17 +8,17 @@ const DATABASE_URL = process.env.MONGO_URL || "";
 let client = null;
 
 export const insertDocuments = async (
-    databaseName, collectionName, documents = null
+    databaseName, collectionName, doc
 ) => {
     if (client == null) {
         await connect();
     }
 
-    if (!documents) return {"error":"insert - no items found to insert"};
+    if (!doc) return {"error":"insert - no doc found to insert"};
     
     const database = client.db(databaseName);
     const collection = database.collection(collectionName);
-    return await collection.insertMany(documents);
+    return await collection.insertOne(doc);
 }
 
 export const findDocuments = async (

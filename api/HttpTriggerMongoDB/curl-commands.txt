@@ -10,18 +10,25 @@ curl \
 --data @find-all.json \
 http://localhost:7071/api/HttpTriggerMongoDB
 
-# insert 1
+# upsert-insert 1
 
 curl --header "Content-Type: application/json" \
 --request POST \
---data @insert.json \
+--data @upsert-insert.json \
 http://localhost:7071/api/HttpTriggerMongoDB
 
-# update 1
+# upsert-update with id
 
 curl --header "Content-Type: application/json" \
 --request POST \
---data @update.json \
+--data @upsert-update-id.json \
+http://localhost:7071/api/HttpTriggerMongoDB
+
+# upsert-update with key
+
+curl --header "Content-Type: application/json" \
+--request POST \
+--data @upsert-update-key.json \
 http://localhost:7071/api/HttpTriggerMongoDB
 
 # remove 1

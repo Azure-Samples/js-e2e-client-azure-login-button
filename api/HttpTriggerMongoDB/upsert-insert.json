@@ -1,0 +1,11 @@
+{
+    "action": "upsert",
+    "databaseName": "app-db-1",
+    "collectionName": "User",
+    "doc":
+        {
+            "azureAppUserId": "myid3",
+            "azureAppUserEmail": "joansmith3",
+            "lastConnection": "may 21 - 3"
+        }
+}

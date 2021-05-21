@@ -1,12 +1,13 @@
 {
-    "action": "insert",
+    "action": "upsert",
     "databaseName": "app-db-1",
     "collectionName": "User",
-    "docs": [
+    "id": "60a7a561fbf6954d543e78a9",
+    "doc":
         {
             "azureAppUserId": "myid1",
             "azureAppUserEmail": "joansmith1",
-            "lastConnection": "may 21 - 1"
+            "lastConnection": "may 21 - 222",
+            "favoriteColors":["red","blue","green"]
         }
-    ]
 }
