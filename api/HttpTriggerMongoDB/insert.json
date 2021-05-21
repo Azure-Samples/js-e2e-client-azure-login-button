@@ -1,0 +1,12 @@
+{
+    "action": "insert",
+    "databaseName": "app-db-1",
+    "collectionName": "User",
+    "docs": [
+        {
+            "azureAppUserId": "myid1",
+            "azureAppUserEmail": "joansmith1",
+            "lastConnection": "may 21 - 1"
+        }
+    ]
+}

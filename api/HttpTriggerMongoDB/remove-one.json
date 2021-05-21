@@ -1,0 +1,6 @@
+{
+    "action": "remove",
+    "databaseName": "app-db-1",
+    "collectionName": "User",
+    "id": "60a7a3b61761b02eb0b0f9b8"
+}

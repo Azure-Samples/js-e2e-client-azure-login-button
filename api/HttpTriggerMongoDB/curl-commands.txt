@@ -1,0 +1,32 @@
+# Error - no action 
+
+curl http://localhost:7071/api/HttpTriggerMongoDB
+
+# find all
+
+curl \
+--header "Content-Type: application/json" \
+--request POST \
+--data @find-all.json \
+http://localhost:7071/api/HttpTriggerMongoDB
+
+# insert 1
+
+curl --header "Content-Type: application/json" \
+--request POST \
+--data @insert.json \
+http://localhost:7071/api/HttpTriggerMongoDB
+
+# update 1
+
+curl --header "Content-Type: application/json" \
+--request POST \
+--data @update.json \
+http://localhost:7071/api/HttpTriggerMongoDB
+
+# remove 1
+
+curl --header "Content-Type: application/json" \
+--request POST \
+--data @remove-one.json \
+http://localhost:7071/api/HttpTriggerMongoDB
