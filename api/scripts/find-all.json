@@ -1,0 +1,8 @@
+{
+    "action": "find",
+    "databaseName": "app-db-1",
+    "collectionName": "User",
+    "skip": 0,
+    "limit": 1000,
+    "query": "{}"
+}

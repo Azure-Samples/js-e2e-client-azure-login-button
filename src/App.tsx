@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AzureAuthenticationButton from "./azure/azure-authentication-component";
 import { AccountInfo } from "@azure/msal-browser";
+import { insertUser } from "./azure/azure-function-app";
 
 function App() {
   // current authenticated user
@@ -9,6 +10,12 @@ function App() {
   // authentication callback
   const onAuthenticated = async (userAccountInfo: AccountInfo) => {
     setCurrentUser(userAccountInfo);
+    
+    // set user into my application database, via Azure Function 
+    // @ts-ignore
+    const {sub, name } = userAccountInfo.idTokenClaims
+    await insertUser(sub, name);
+
   };
 
   // Render JSON data in readable format

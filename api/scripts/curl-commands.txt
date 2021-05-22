@@ -1,0 +1,39 @@
+# Error - no action 
+
+curl http://localhost:7071/api/HttpTriggerMongoDB
+
+# find all
+
+curl \
+--header "Content-Type: application/json" \
+--request POST \
+--data @find-all.json \
+http://localhost:7071/api/HttpTriggerMongoDB
+
+# upsert-insert 1
+
+curl --header "Content-Type: application/json" \
+--request POST \
+--data @upsert-insert.json \
+http://localhost:7071/api/HttpTriggerMongoDB
+
+# upsert-update with id
+
+curl --header "Content-Type: application/json" \
+--request POST \
+--data @upsert-update-id.json \
+http://localhost:7071/api/HttpTriggerMongoDB
+
+# upsert-update with key
+
+curl --header "Content-Type: application/json" \
+--request POST \
+--data @upsert-update-key.json \
+http://localhost:7071/api/HttpTriggerMongoDB
+
+# remove 1
+
+curl --header "Content-Type: application/json" \
+--request POST \
+--data @remove-one.json \
+http://localhost:7071/api/HttpTriggerMongoDB
