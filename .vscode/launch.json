@@ -4,13 +4,10 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
+            "name": "Safe chrome",
             "url": "http://localhost:3000",
-            "webRoot": "${workspaceFolder}",
-            "runtimeArgs": [
-                "--disable-web-security"
-            ],
-        },
+            "webRoot": "${workspaceFolder}"
+        },        
         {
             "name": "Attach to Node Functions",
             "type": "node",

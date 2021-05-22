@@ -3,7 +3,11 @@ const ObjectId = require('mongodb').ObjectID;
 
 /* eslint no-return-await: 0 */
 
-const DATABASE_URL = process.env.MONGO_URL || "";
+const DATABASE_URL = process.env.MONGO_URL;
+
+if (!DATABASE_URL) throw Error("DATABASE_URL is empty");
+
+console.log(DATABASE_URL);
 
 let client = null;
 
